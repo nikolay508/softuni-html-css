@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+nav {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 0.5rem 1rem;
+}
+
+.nav-item.unspecials {
+  padding: 1rem 1rem;
+}
+
+.nav-item.active {
+  padding: 0.75rem 1rem;
+  width: 200px;
+  height: 55px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.2);
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: 0.8px solid white;
+}
+
+.hero {
+  background: linear-gradient(135deg, #ff7b7b 0%, #dbc1b3 100%);
+  min-height: 52vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.12rem;
+  max-width: 700px;
+  margin-bottom: 2.5rem;
+}
+
+.btn {
+  background: transparent;
+  color: white;
+  font-size: 1.1rem;
+  border: 1px solid white;
+  padding: 1.2rem 3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #9c9999;
+  border: 0.8px solid #9c9999;
+  padding: 1.2rem 2.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline.new-cars {
+  position: absolute;
+  top: 455px;
+  right: 160px;
+}
+
+.btn-light {
+  background: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.featured-cars {
+  padding: 5rem 2rem;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0rem 7rem;
+  position: relative;
+}
+
+.car-card {
+  text-align: left;
+  max-width: 450px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.car-card img {
+  width: 100%;
+  max-width: 450px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+.car-card h2 {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.car-card p {
+  color: #666;
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin-bottom: 5rem;
+}
+
+.car-card .btn-outline {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.signup {
+  background: linear-gradient(135deg, #68c5ac 0%, #406175 100%);
+  padding: 5.3rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.signup-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 1.5rem 3rem;
+  border-radius: 10px;
+  border: 0.8px solid white;
+}
+
+.signup-container p {
+  font-size: 1.6rem;
+  font-weight: 380;
+  margin: 0;
+}
+
+.signup-container .btn-light {
+  white-space: nowrap;
+  font-size: 1.2rem;
+  color: #0d795c;
+}
+
+.weird-cars {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.weird-cars h2 {
+  color: #666;
+  font-weight: 300;
+  font-size: 2.2rem;
+  margin-top: 0.8rem;
+  margin-bottom: 2.2rem;
+}
+
+.weird-cars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 1rem auto;
+  margin-bottom: 3rem;
+}
+
+.weird-cars-grid img {
+  width: 100%;
+  height: auto;
+}
+
+.explore {
+  text-align: center;
+  padding: 5.7rem 2rem;
+  background: rgba(229, 227, 227, 0.15);
+  border: 1px solid rgb(229, 227, 227);
+}
+
+.explore h2 {
+  font-weight: 300;
+  color: #666;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.explore p {
+  color: #ff6b6b;
+  font-weight: 300;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+  color: rgb(211, 209, 209);
+  font-size: 0.9rem;
+}

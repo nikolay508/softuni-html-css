@@ -1,0 +1,213 @@
+@media screen and (max-width: 600px) {
+  .nav {
+    padding: 5px 1rem;
+    height: 130px;
+    flex-direction: column;
+    background-color: #4a90a0;
+    color: white;
+    position: relative;
+  }
+
+  .nav-burger {
+    position: absolute;
+    left: 70px;
+    top: 15px;
+    color: white;
+    font-size: 2rem;
+  }
+
+  .nav-logo {
+    position: absolute;
+    right: 60px;
+    top: 10px;
+    text-align: center;
+  }
+
+  .nav-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-user-btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav-user-btn-sign-in {
+    background-color: #4ab3a5;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-user-btn-join {
+    background-color: #418fc3;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-user-btns button {
+    color: white;
+    border: none;
+    background: none;
+    padding: 3px 0;
+    font-size: 14px;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .content-info {
+    padding: 2rem 1.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-info-welcome {
+    width: 100%;
+  }
+
+  .content-info-welcome h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .content-info-welcome p {
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .content-info-welcome button {
+    width: 80%;
+    padding: 1rem 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .content-info-img {
+    display: none;
+  }
+
+  .content-services {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-services > div {
+    border-radius: 50px;
+    padding: 2.5rem;
+    width: 100%;
+  }
+
+  .content-services h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+
+  .content-services p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #666;
+  }
+
+  .violet {
+    background-color: #f0e6f6;
+  }
+
+  .blue {
+    background-color: #e6eef6;
+  }
+
+  .light-blue {
+    background-color: #e6f6f6;
+  }
+
+  .green {
+    background-color: #e6f6eb;
+  }
+
+  .gallery {
+    background-color: #b0d7d5;
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-color: transparent;
+  }
+
+  footer {
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: #e6f6f6;
+  }
+
+  footer a {
+    color: #4a90a0;
+    text-decoration: none;
+  }
+
+  .nav-burger-menu {
+    display: block;
+    position: absolute;
+    left: 70px;
+    top: 0px;
+    font-size: 2.7rem;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #5cd6c0; /* Matching the greenish color from your header */
+}
+
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Show hamburger menu on mobile */
+@media screen and (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-links.active {
+    display: block;
+  }
+}
